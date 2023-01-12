@@ -1,0 +1,83 @@
+.classes-page {
+    padding: 100px 0;
+}
+
+ul {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #88839e;
+    margin-bottom: 5px;
+    background: #88839e;
+    border-radius: 3px;
+    transition: 0.1s all;
+    height: 30px;
+}
+
+.list li:hover {
+    background: #4390e7;
+}
+
+.list li > p{
+    position: relative;
+    color: #fff;
+}
+
+.list input {
+    margin-right: 10px;
+}
+
+/* .list-item:nth-child(2){
+    background: indigo;
+}
+
+.list-item:nth-child(2) + .list-item{
+    background: red;
+}
+
+.list-item:nth-child(4) ~ .list-item{
+    background: red;
+} */
+
+.list-item input:checked + p span{
+    text-decoration: line-through;
+    background: tomato;
+}
+
+.list-item input:checked ~ p{
+    color: gray;
+}
+
+.list-item{
+    position: relative;
+}
+
+.list-item > p span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: calc(100% + 5px);
+    height: 2px;
+    background: transparent;
+    transition: .4 ease-in-out;
+
+}
+
+.custom-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #88839e;
+}
+
+.list-item input:checked + 
